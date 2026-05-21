@@ -36,10 +36,10 @@ function SectionCard({ id, title, children, color }) {
 }
 function PhotoBooklet() {
   const photos = [
-    "/photos/cafe.jpg",
-    "/photos/travel.jpg",
-    "/photos/matcha.jpg",
-    "/photos/design.jpg",
+    "/public/cafe.jpg",
+    "/public/travel.jpg",
+    "/public/matcha.jpg",
+    "/public/design.jpg",
   ];
 
   return (
