@@ -35,11 +35,17 @@ function SectionCard({ id, title, children, color }) {
   );
 }
 function PhotoBooklet() {
-  const photos = [
-    "/public/cafe.jpg",
-    "/public/travel.jpg",
-    "/public/matcha.jpg",
-    "/public/design.jpg",
+  const photos = ["/conf.png",
+
+  "/coffee2.png",
+
+  "/trav.png",
+
+  "/cafe.png",
+
+  "/teavel2.jpg",
+
+  "/coffee.JPG",
   ];
 
   return (
@@ -484,13 +490,18 @@ export default function AboutPage() {
 
       <div className="grid gap-5 rounded-[2.5rem] bg-[#f7f2ef]/45 p-5 md:grid-cols-3">
   {[
-    "/src/assets/conf.png",
-    "/src/assets/coffee2.png",
-    "/src/assets/trav.png",
-        "/src/assets/cafe.png",
-    "/src/assets/teavel2.jpg",
-    "/src/assets/coffee.JPG",
+    "/conf.png",
 
+  "/coffee2.png",
+
+  "/trav.png",
+
+  "/cafe.png",
+
+  "/teavel2.jpg",
+
+  "/coffee.JPG",
+  
   ].map((src, index) => (
     <motion.img
       key={src}
