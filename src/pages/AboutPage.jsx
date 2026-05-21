@@ -34,55 +34,49 @@ function SectionCard({ id, title, children, color }) {
     </section>
   );
 }
-function PhotoBooklet() {
-  const photos = ["/conf.png",
+// function PhotoBooklet() {
+//   const photos = [
+//     "/photos/cafe.jpg",
+//     "/photos/travel.jpg",
+//     "/photos/matcha.jpg",
+//     "/photos/design.jpg",
+//   ];
 
-  "/coffee2.png",
+//   return (
+//     <div className="relative h-[420px] rounded-[2rem] bg-[#fbf6d6] p-8 shadow-sm ring-1 ring-stone-200/60">
+//       <p className="absolute left-8 top-6 text-xs uppercase tracking-[0.2em] text-stone-400">
+//         little things
+//       </p>
 
-  "/trav.png",
+//       {photos.map((src, index) => (
+//         <motion.img
+//           key={src}
+//           src={src}
+//           alt=""
+//           draggable="false"
+//           onContextMenu={(e) => e.preventDefault()}
+//           initial={{ opacity: 0, y: 20, rotate: index % 2 === 0 ? -4 : 4 }}
+//           whileInView={{ opacity: 1, y: 0 }}
+//           whileHover={{ y: -8, scale: 1.04, zIndex: 20 }}
+//           transition={{ duration: 0.5, delay: index * 0.12 }}
+//           className={`absolute h-40 w-32 object-cover shadow-lg ${
+//             index === 0
+//               ? "left-10 top-20 rotate-[-5deg]"
+//               : index === 1
+//               ? "left-40 top-28 rotate-[3deg]"
+//               : index === 2
+//               ? "right-28 top-16 rotate-[5deg]"
+//               : "right-12 bottom-12 rotate-[-3deg]"
+//           }`}
+//         />
+//       ))}
 
-  "/cafe.png",
-
-  "/teavel2.jpg",
-
-  "/coffee.JPG",
-  ];
-
-  return (
-    <div className="relative h-[420px] rounded-[2rem] bg-[#fbf6d6] p-8 shadow-sm ring-1 ring-stone-200/60">
-      <p className="absolute left-8 top-6 text-xs uppercase tracking-[0.2em] text-stone-400">
-        little things
-      </p>
-
-      {photos.map((src, index) => (
-        <motion.img
-          key={src}
-          src={src}
-          alt=""
-          draggable="false"
-          onContextMenu={(e) => e.preventDefault()}
-          initial={{ opacity: 0, y: 20, rotate: index % 2 === 0 ? -4 : 4 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ y: -8, scale: 1.04, zIndex: 20 }}
-          transition={{ duration: 0.5, delay: index * 0.12 }}
-          className={`absolute h-40 w-32 object-cover shadow-lg ${
-            index === 0
-              ? "left-10 top-20 rotate-[-5deg]"
-              : index === 1
-              ? "left-40 top-28 rotate-[3deg]"
-              : index === 2
-              ? "right-28 top-16 rotate-[5deg]"
-              : "right-12 bottom-12 rotate-[-3deg]"
-          }`}
-        />
-      ))}
-
-      <div className="absolute bottom-8 left-8 rounded-full bg-white/70 px-5 py-2 text-sm text-stone-600">
-        cafés · travel · design · matcha
-      </div>
-    </div>
-  );
-}
+//       <div className="absolute bottom-8 left-8 rounded-full bg-white/70 px-5 py-2 text-sm text-stone-600">
+//         cafés · travel · design · matcha
+//       </div>
+//     </div>
+//   );
+// }
 export default function AboutPage() {
   const navigate = useNavigate();
   const location = useLocation();
@@ -490,18 +484,13 @@ export default function AboutPage() {
 
       <div className="grid gap-5 rounded-[2.5rem] bg-[#f7f2ef]/45 p-5 md:grid-cols-3">
   {[
-    "/conf.png",
+    "/public/photos/conf.png",
+    "/public/photos/coffee2.png",
+    "/public/photos/trav.png",
+    "/public/photos/cafe.png",
+    "/public/photos/teavel2.jpg",
+    "/public/photos/coffee.JPG",
 
-  "/coffee2.png",
-
-  "/trav.png",
-
-  "/cafe.png",
-
-  "/teavel2.jpg",
-
-  "/coffee.JPG",
-  
   ].map((src, index) => (
     <motion.img
       key={src}

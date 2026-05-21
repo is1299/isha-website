@@ -1,4 +1,4 @@
-Fimport { useState } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 
@@ -182,7 +182,7 @@ function AboutStrip() {
     initial={{ opacity: 0, y: 18, rotate: -2 }}
     animate={{ opacity: 1, y: 0, rotate: -2 }}
     transition={{ duration: 0.7, delay: 0.2 }}
-    src="/Isha.png"
+    src="/photos/Isha.png"
     alt="Isha Shah"
     draggable="false"
     onContextMenu={(e) => e.preventDefault()}
