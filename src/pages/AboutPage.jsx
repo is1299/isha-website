@@ -484,12 +484,12 @@ export default function AboutPage() {
 
       <div className="grid gap-5 rounded-[2.5rem] bg-[#f7f2ef]/45 p-5 md:grid-cols-3">
   {[
-    "/public/photos/conf.png",
-    "/public/photos/coffee2.png",
-    "/public/photos/trav.png",
-    "/public/photos/cafe.png",
-    "/public/photos/teavel2.jpg",
-    "/public/photos/coffee.JPG",
+    "/photos/conf.png",
+    "/photos/coffee2.png",
+    "/photos/trav.png",
+    "/photos/cafe.png",
+    "/photos/teavel2.jpg",
+    "/photos/coffee.jpg",
 
   ].map((src, index) => (
     <motion.img
