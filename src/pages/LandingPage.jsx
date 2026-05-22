@@ -182,7 +182,7 @@ function AboutStrip() {
     initial={{ opacity: 0, y: 18, rotate: -2 }}
     animate={{ opacity: 1, y: 0, rotate: -2 }}
     transition={{ duration: 0.7, delay: 0.2 }}
-    src="/public/photos/isha.png"
+    src="/photos/isha.png"
     alt="Isha Shah"
     draggable="false"
     onContextMenu={(e) => e.preventDefault()}
