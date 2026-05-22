@@ -489,9 +489,7 @@ export default function AboutPage() {
     "/photos/trav.png",
     "/photos/cafe.png",
     "/photos/teavel2.jpg",
-    // "/photos/coffee.JPG",
-
-  ].map((src, index) => (
+].map((src, index) => (
     <motion.img
       key={src}
       src={src}
